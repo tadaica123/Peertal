@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; normalTitle = "Scan"; ObjectID = "3PA-Yp-T32"; */
+"3PA-Yp-T32.normalTitle" = "Scan";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "4Vu-ZL-Me0"; */
+"4Vu-ZL-Me0.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "DHo-vP-vru"; */
+"DHo-vP-vru.normalTitle" = "Sign In";
+
+/* Class = "UILabel"; text = "Peertal"; ObjectID = "EJy-Pn-9tu"; */
+"EJy-Pn-9tu.text" = "Peertal";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "INO-fU-yO3"; */
+"INO-fU-yO3.text" = "Kết quả";
+
+/* Class = "UILabel"; text = "Loading"; ObjectID = "Kdl-Bz-vJ3"; */
+"Kdl-Bz-vJ3.text" = "Loading";
+
+/* Class = "UILabel"; text = "Peertal"; ObjectID = "M4P-Qw-VwF"; */
+"M4P-Qw-VwF.text" = "Peertal";
+
+/* Class = "UIButton"; normalTitle = "Bluetooth"; ObjectID = "Odo-Cg-6gG"; */
+"Odo-Cg-6gG.normalTitle" = "Bluetooth";
+
+/* Class = "UILabel"; text = "UDID Device"; ObjectID = "OrC-No-chl"; */
+"OrC-No-chl.text" = "UDID Device";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "RPx-Vb-G0l"; */
+"RPx-Vb-G0l.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Wifi"; ObjectID = "euC-Wb-vvI"; */
+"euC-Wb-vvI.normalTitle" = "Wifi";
+
+/* Class = "UIButton"; normalTitle = "Sign out"; ObjectID = "iII-lb-rAj"; */
+"iII-lb-rAj.normalTitle" = "Sign out";
+
+/* Class = "UILabel"; text = "List Device Find"; ObjectID = "nqA-NT-aQC"; */
+"nqA-NT-aQC.text" = "List Device Find";
