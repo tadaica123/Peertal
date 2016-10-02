@@ -17,6 +17,7 @@
 		6019A7341CDA2B1A00E606C3 /* FindWifiNearlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7331CDA2B1A00E606C3 /* FindWifiNearlyUITests.swift */; };
 		6019A7421CDA391200E606C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7411CDA391200E606C3 /* MainViewController.swift */; };
 		6019A7451CDA543700E606C3 /* WifiObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7441CDA543700E606C3 /* WifiObjectData.swift */; };
+		6032EB0D1DA1642900CE7ACB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6032EB0C1DA1642900CE7ACB /* WelcomeViewController.swift */; };
 		6060C5DE1CE695F30017972E /* DialogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6060C5DD1CE695F30017972E /* DialogManager.swift */; };
 		60B8AEB91CE2E76D002690F9 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B8AE9E1CE2E76D002690F9 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		60B8AEBA1CE2E76D002690F9 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B8AEA11CE2E76D002690F9 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -71,6 +72,7 @@
 		6019A7351CDA2B1A00E606C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6019A7411CDA391200E606C3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6019A7441CDA543700E606C3 /* WifiObjectData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiObjectData.swift; sourceTree = "<group>"; };
+		6032EB0C1DA1642900CE7ACB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		6060C5DD1CE695F30017972E /* DialogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogManager.swift; sourceTree = "<group>"; };
 		60B8AE991CE25FE6002690F9 /* FindWifiNearly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FindWifiNearly-Bridging-Header.h"; sourceTree = "<group>"; };
 		60B8AE9D1CE2E76D002690F9 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			children = (
 				6019A7121CDA2B1A00E606C3 /* SignInViewController.swift */,
 				6019A7411CDA391200E606C3 /* MainViewController.swift */,
+				6032EB0C1DA1642900CE7ACB /* WelcomeViewController.swift */,
 			);
 			name = Activity;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				6019A7191CDA2B1A00E606C3 /* FindWifiNearly.xcdatamodeld in Sources */,
 				60B8AEBE1CE2E76D002690F9 /* NSString_HTML.m in Sources */,
 				60B8AEC91CE32A8A002690F9 /* UtilsManager.swift in Sources */,
+				6032EB0D1DA1642900CE7ACB /* WelcomeViewController.swift in Sources */,
 				6019A7111CDA2B1A00E606C3 /* AppDelegate.swift in Sources */,
 				60B8AEC31CE2E76D002690F9 /* NSString+MD5Addition.m in Sources */,
 				60B8AEBA1CE2E76D002690F9 /* ASIDataCompressor.m in Sources */,
