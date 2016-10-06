@@ -6,4 +6,21 @@
 //  Copyright © 2016 Appfish. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class WelcomeViewController:  UIViewController , BackendAPIManagerDelegate{
+    
+    @IBAction func buttonPressed(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "segueIdentifier", sender: self)
+
+    }
+    
+    func requestCompelte(_ response: String) {
+
+        
+    }
+    
+    func requestFailed(_ response:String){
+       
+    }
+}
