@@ -10,6 +10,11 @@ import UIKit
 
 class WelcomeViewController:  UIViewController , BackendAPIManagerDelegate{
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+                // Do any additional setup after loading the view.
+    }
+    
     @IBAction func buttonPressed(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "segueIdentifier", sender: self)
 

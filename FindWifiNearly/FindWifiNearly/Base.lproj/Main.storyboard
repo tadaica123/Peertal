@@ -147,7 +147,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="wei-ir-zT7">
             <objects>
-                <viewController id="70n-cc-Bio" userLabel="Welcome View Controller" customClass="WelcomeViewController" customModule="FindWifiNearly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="70n-cc-Bio" userLabel="Welcome View Controller" customClass="WelcomeViewController" customModule="FindWifiNearly" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VXw-BW-y07"/>
                         <viewControllerLayoutGuide type="bottom" id="3QF-rj-WAR"/>
@@ -704,12 +704,30 @@
                     </view>
                     <navigationItem key="navigationItem" id="MZb-Da-ut0"/>
                     <connections>
-                        <segue destination="UZv-OQ-x9B" kind="show" identifier="segueIdentifier" id="g1L-TF-Ax6"/>
+                        <segue destination="xqh-je-0mJ" kind="show" identifier="segueIdentifier" id="Ssd-Ef-OUc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9E1-8l-fah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1590" y="414"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="QY9-x9-FUo">
+            <objects>
+                <viewController storyboardIdentifier="HomePageViewController" id="xqh-je-0mJ" customClass="HomePageViewController" customModule="FindWifiNearly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEZ-fD-05R"/>
+                        <viewControllerLayoutGuide type="bottom" id="WJk-cv-zmv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iyr-xe-ECO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTc-ik-Nhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272" y="412"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="VkV-sC-rVn">
@@ -730,6 +748,24 @@
             </objects>
             <point key="canvasLocation" x="3266" y="742"/>
         </scene>
+        <!--Left Slide View Controller-->
+        <scene sceneID="ITI-Kh-Z8Y">
+            <objects>
+                <viewController storyboardIdentifier="LeftSlideViewController" id="oi3-J2-K2b" customClass="LeftSlideViewController" customModule="FindWifiNearly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZBn-7C-B5A"/>
+                        <viewControllerLayoutGuide type="bottom" id="9XX-Ua-BBl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u2g-E4-DhP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9l-9c-PtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266" y="-254"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="LbN-9B-Vf7">
             <objects>
@@ -748,24 +784,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJu-lL-WBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3266" y="87"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="6MU-bh-OG2">
-            <objects>
-                <tabBarController id="UZv-OQ-x9B" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="ehV-Xv-7mr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="ODd-8x-kP2" kind="relationship" relationship="viewControllers" id="iR2-t0-Jfx"/>
-                        <segue destination="M6m-z1-XzX" kind="relationship" relationship="viewControllers" id="V59-3z-Ub7"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aeN-ot-B21" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2313" y="414"/>
         </scene>
     </scenes>
 </document>
