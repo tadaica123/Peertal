@@ -13,10 +13,23 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var centerContainer: MMDrawerController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        _ = self.window!.rootViewController
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let centerViewController = mainStoryboard.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+        let leftViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftSlideViewController") as! LeftSlideViewController
+        let leftSideNav = UINavigationController(rootViewController: leftViewController)
+        let centerNav = UINavigationController(rootViewController: centerViewController)
+        centerNav.isNavigationBarHidden = true;
+        centerContainer = MMDrawerController(center: centerNav, leftDrawerViewController: leftSideNav)
+//        centerContainer!.openDrawerGestureModeMask = nil;
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.panningCenterView;
+        window!.rootViewController = centerContainer
+        window!.makeKeyAndVisible()
+        
         return true
     }
 

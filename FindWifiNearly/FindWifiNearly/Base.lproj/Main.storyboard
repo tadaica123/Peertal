@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hVY-ms-TDK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hVY-ms-TDK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -147,7 +147,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="wei-ir-zT7">
             <objects>
-                <viewController id="70n-cc-Bio" userLabel="Welcome View Controller" customClass="WelcomeViewController" customModule="FindWifiNearly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="70n-cc-Bio" userLabel="Welcome View Controller" customClass="WelcomeViewController" customModule="FindWifiNearly" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VXw-BW-y07"/>
                         <viewControllerLayoutGuide type="bottom" id="3QF-rj-WAR"/>
@@ -321,7 +321,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="zPe-b4-DXm"/>
                     <connections>
-                        <segue destination="ZZt-f4-mhw" kind="push" identifier="segueIdentifier" id="FXh-Bq-sNb"/>
+                        <segue destination="ZZt-f4-mhw" kind="show" identifier="segueIdentifier" id="FXh-Bq-sNb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIG-pf-p7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -574,7 +574,7 @@
         <!--Sign In View Controller 2-->
         <scene sceneID="uRV-au-AgT">
             <objects>
-                <viewController id="ZZt-f4-mhw" userLabel="Sign In View Controller 2" sceneMemberID="viewController">
+                <viewController id="ZZt-f4-mhw" userLabel="Sign In View Controller 2" customClass="SignInViewController2" customModule="FindWifiNearly" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gLW-eC-YDp"/>
                         <viewControllerLayoutGuide type="bottom" id="t6q-nX-ORD"/>
@@ -637,6 +637,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonEnterPressed:" destination="ZZt-f4-mhw" eventType="touchUpInside" id="fmN-GF-LLc"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yym-w9-URb">
                                 <constraints>
@@ -652,6 +655,20 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTM-3S-uho">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AE1-rQ-Hn6"/>
+                                </constraints>
+                                <color key="tintColor" red="0.082352943720000002" green="0.37647062539999998" blue="0.68235296010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="TRY WITH OTHER ACCOUNT">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCancelPressed:" destination="ZZt-f4-mhw" eventType="touchUpInside" id="pCB-Re-FMf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -663,8 +680,10 @@
                             <constraint firstItem="5zJ-GH-XSK" firstAttribute="leading" secondItem="eHz-ls-1nb" secondAttribute="leading" id="98Z-eg-0Au"/>
                             <constraint firstItem="AK1-t9-WrT" firstAttribute="top" secondItem="5zJ-GH-XSK" secondAttribute="bottom" constant="10" id="9Z3-1y-sRK"/>
                             <constraint firstItem="5zJ-GH-XSK" firstAttribute="trailing" secondItem="eHz-ls-1nb" secondAttribute="trailing" id="Aw5-2v-ug3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rTM-3S-uho" secondAttribute="trailing" id="Igw-P1-Ngb"/>
                             <constraint firstItem="NWk-Ku-EXc" firstAttribute="top" secondItem="zKa-0P-Q0A" secondAttribute="bottom" constant="9" id="NUv-Zp-xY5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eHz-ls-1nb" secondAttribute="trailing" id="NjK-IB-ntn"/>
+                            <constraint firstItem="rTM-3S-uho" firstAttribute="top" secondItem="USH-cB-OaM" secondAttribute="bottom" constant="15" id="OEa-DS-tyn"/>
                             <constraint firstItem="RxB-q8-22K" firstAttribute="top" secondItem="yym-w9-URb" secondAttribute="bottom" constant="17" id="RC8-p3-Kzi"/>
                             <constraint firstAttribute="leadingMargin" secondItem="zKa-0P-Q0A" secondAttribute="leading" id="Std-kZ-Mbv"/>
                             <constraint firstItem="xmQ-x1-FIc" firstAttribute="top" secondItem="gLW-eC-YDp" secondAttribute="bottom" constant="8" id="T5G-CP-GDv"/>
@@ -677,16 +696,94 @@
                             <constraint firstAttribute="leadingMargin" secondItem="yym-w9-URb" secondAttribute="leading" id="dxh-fh-rP4"/>
                             <constraint firstAttribute="leadingMargin" secondItem="RxB-q8-22K" secondAttribute="leading" id="etr-fw-Yx8"/>
                             <constraint firstItem="5zJ-GH-XSK" firstAttribute="trailing" secondItem="AK1-t9-WrT" secondAttribute="trailing" id="jZM-eh-xa8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rTM-3S-uho" secondAttribute="leading" id="pSm-tM-ed2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zKa-0P-Q0A" secondAttribute="trailing" id="qu9-qB-7ra"/>
                             <constraint firstAttribute="leadingMargin" secondItem="USH-cB-OaM" secondAttribute="leading" id="rxf-bM-gLh"/>
                             <constraint firstItem="xmQ-x1-FIc" firstAttribute="centerX" secondItem="njI-zG-lDm" secondAttribute="centerX" id="y3c-LB-FNk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MZb-Da-ut0"/>
+                    <connections>
+                        <segue destination="xqh-je-0mJ" kind="show" identifier="segueIdentifier" id="Ssd-Ef-OUc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9E1-8l-fah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1590" y="414"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="QY9-x9-FUo">
+            <objects>
+                <viewController storyboardIdentifier="HomePageViewController" id="xqh-je-0mJ" customClass="HomePageViewController" customModule="FindWifiNearly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEZ-fD-05R"/>
+                        <viewControllerLayoutGuide type="bottom" id="WJk-cv-zmv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iyr-xe-ECO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTc-ik-Nhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272" y="412"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="VkV-sC-rVn">
+            <objects>
+                <viewController id="M6m-z1-XzX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UvN-Vc-sTC"/>
+                        <viewControllerLayoutGuide type="bottom" id="XlP-FQ-C5U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="257-du-DpR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="5XC-TC-ukQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Og9-Y1-gP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3266" y="742"/>
+        </scene>
+        <!--Left Slide View Controller-->
+        <scene sceneID="ITI-Kh-Z8Y">
+            <objects>
+                <viewController storyboardIdentifier="LeftSlideViewController" id="oi3-J2-K2b" customClass="LeftSlideViewController" customModule="FindWifiNearly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZBn-7C-B5A"/>
+                        <viewControllerLayoutGuide type="bottom" id="9XX-Ua-BBl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u2g-E4-DhP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9l-9c-PtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266" y="-254"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="LbN-9B-Vf7">
+            <objects>
+                <viewController id="ODd-8x-kP2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5C0-x5-RWY"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ml-cs-pqg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OOe-hp-8Gx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="m4Q-4v-sZh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJu-lL-WBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3266" y="87"/>
         </scene>
     </scenes>
 </document>
