@@ -1158,6 +1158,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Mrq-qT-SaI" id="238-TF-kZ4"/>
+                                    <outlet property="delegate" destination="Mrq-qT-SaI" id="x2h-72-32L"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
