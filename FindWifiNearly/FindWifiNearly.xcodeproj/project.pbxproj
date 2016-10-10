@@ -46,6 +46,8 @@
 		60B8AEC71CE309BA002690F9 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B8AEC61CE309BA002690F9 /* libz.1.1.3.tbd */; };
 		60B8AEC91CE32A8A002690F9 /* UtilsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B8AEC81CE32A8A002690F9 /* UtilsManager.swift */; };
 		60C6CA9F1CDAE79000A6A5EE /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C6CA9E1CDAE79000A6A5EE /* BLEManager.swift */; };
+		60DB26B51DAB1AF00067AC30 /* AcquistionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB26B41DAB1AF00067AC30 /* AcquistionViewController.swift */; };
+		60DB26B71DAB25060067AC30 /* MyCustomTextFieldGrayBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB26B61DAB25060067AC30 /* MyCustomTextFieldGrayBorder.swift */; };
 		60E8B4F51CE1E3C200FFB946 /* BankendAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E8B4F41CE1E3C200FFB946 /* BankendAPIManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +135,8 @@
 		60B8AEC61CE309BA002690F9 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 		60B8AEC81CE32A8A002690F9 /* UtilsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsManager.swift; sourceTree = "<group>"; };
 		60C6CA9E1CDAE79000A6A5EE /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		60DB26B41DAB1AF00067AC30 /* AcquistionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcquistionViewController.swift; sourceTree = "<group>"; };
+		60DB26B61DAB25060067AC30 /* MyCustomTextFieldGrayBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTextFieldGrayBorder.swift; sourceTree = "<group>"; };
 		60E8B4F41CE1E3C200FFB946 /* BankendAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankendAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,6 +260,7 @@
 				6026EB661DA731CD00FEDBAA /* LeftSlideViewController.swift */,
 				6026EB681DA733F800FEDBAA /* HomePageViewController.swift */,
 				606AD2C71DA904CB0084F757 /* SearchPageViewController.swift */,
+				60DB26B41DAB1AF00067AC30 /* AcquistionViewController.swift */,
 			);
 			name = Activity;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			children = (
 				606AD2C51DA8F7BC0084F757 /* MyCustomButton.swift */,
 				606AD2C91DA92CC70084F757 /* MyCustomCircleImageView.swift */,
+				60DB26B61DAB25060067AC30 /* MyCustomTextFieldGrayBorder.swift */,
 			);
 			name = MyCustomUI;
 			sourceTree = "<group>";
@@ -499,6 +505,7 @@
 				606AD2C61DA8F7BC0084F757 /* MyCustomButton.swift in Sources */,
 				60B8AEBF1CE2E76D002690F9 /* ASIAuthenticationDialog.m in Sources */,
 				60B8AEC41CE2E76D002690F9 /* ASIInputStream.m in Sources */,
+				60DB26B71DAB25060067AC30 /* MyCustomTextFieldGrayBorder.swift in Sources */,
 				6019A7451CDA543700E606C3 /* WifiObjectData.swift in Sources */,
 				6060C5DE1CE695F30017972E /* DialogManager.swift in Sources */,
 				60C6CA9F1CDAE79000A6A5EE /* BLEManager.swift in Sources */,
@@ -507,6 +514,7 @@
 				60B8AEC11CE2E76D002690F9 /* Reachability.m in Sources */,
 				6026EB611DA72E8300FEDBAA /* MMDrawerController.m in Sources */,
 				60B8AEBD1CE2E76D002690F9 /* ASINetworkQueue.m in Sources */,
+				60DB26B51DAB1AF00067AC30 /* AcquistionViewController.swift in Sources */,
 				60B8AEBB1CE2E76D002690F9 /* ASIHTTPRequest.m in Sources */,
 				606AD2C31DA8F0070084F757 /* CosmosDistrib.swift in Sources */,
 				6026EB621DA72E8300FEDBAA /* MMDrawerVisualState.m in Sources */,
