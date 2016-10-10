@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5D0DC91DA79FB40059A755 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D0DC11DA79FB40059A755 /* MMDrawerBarButtonItem.m */; };
+		4E5D0DCA1DA79FB40059A755 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D0DC31DA79FB40059A755 /* MMDrawerController.m */; };
+		4E5D0DCB1DA79FB40059A755 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D0DC61DA79FB40059A755 /* MMDrawerVisualState.m */; };
+		4E5D0DCC1DA79FB40059A755 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5D0DC81DA79FB40059A755 /* UIViewController+MMDrawerController.m */; };
 		6019A7111CDA2B1A00E606C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7101CDA2B1A00E606C3 /* AppDelegate.swift */; };
 		6019A7131CDA2B1A00E606C3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7121CDA2B1A00E606C3 /* SignInViewController.swift */; };
 		6019A7161CDA2B1A00E606C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6019A7141CDA2B1A00E606C3 /* Main.storyboard */; };
@@ -18,10 +22,6 @@
 		6019A7421CDA391200E606C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7411CDA391200E606C3 /* MainViewController.swift */; };
 		6019A7451CDA543700E606C3 /* WifiObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7441CDA543700E606C3 /* WifiObjectData.swift */; };
 		6026EB551DA7267C00FEDBAA /* SignInViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026EB541DA7267C00FEDBAA /* SignInViewController2.swift */; };
-		6026EB601DA72E8300FEDBAA /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026EB581DA72E8300FEDBAA /* MMDrawerBarButtonItem.m */; };
-		6026EB611DA72E8300FEDBAA /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026EB5A1DA72E8300FEDBAA /* MMDrawerController.m */; };
-		6026EB621DA72E8300FEDBAA /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026EB5D1DA72E8300FEDBAA /* MMDrawerVisualState.m */; };
-		6026EB631DA72E8300FEDBAA /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6026EB5F1DA72E8300FEDBAA /* UIViewController+MMDrawerController.m */; };
 		6026EB671DA731CD00FEDBAA /* LeftSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026EB661DA731CD00FEDBAA /* LeftSlideViewController.swift */; };
 		6026EB691DA733F800FEDBAA /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6026EB681DA733F800FEDBAA /* HomePageViewController.swift */; };
 		6032EB0D1DA1642900CE7ACB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6032EB0C1DA1642900CE7ACB /* WelcomeViewController.swift */; };
@@ -63,6 +63,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E5D0DC01DA79FB40059A755 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		4E5D0DC11DA79FB40059A755 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		4E5D0DC21DA79FB40059A755 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		4E5D0DC31DA79FB40059A755 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		4E5D0DC41DA79FB40059A755 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		4E5D0DC51DA79FB40059A755 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		4E5D0DC61DA79FB40059A755 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		4E5D0DC71DA79FB40059A755 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		4E5D0DC81DA79FB40059A755 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		6019A70D1CDA2B1800E606C3 /* FindWifiNearly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindWifiNearly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6019A7101CDA2B1A00E606C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6019A7121CDA2B1A00E606C3 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -80,15 +89,6 @@
 		6019A7411CDA391200E606C3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6019A7441CDA543700E606C3 /* WifiObjectData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiObjectData.swift; sourceTree = "<group>"; };
 		6026EB541DA7267C00FEDBAA /* SignInViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController2.swift; sourceTree = "<group>"; };
-		6026EB571DA72E8300FEDBAA /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		6026EB581DA72E8300FEDBAA /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
-		6026EB591DA72E8300FEDBAA /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
-		6026EB5A1DA72E8300FEDBAA /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
-		6026EB5B1DA72E8300FEDBAA /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
-		6026EB5C1DA72E8300FEDBAA /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
-		6026EB5D1DA72E8300FEDBAA /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
-		6026EB5E1DA72E8300FEDBAA /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		6026EB5F1DA72E8300FEDBAA /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		6026EB661DA731CD00FEDBAA /* LeftSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSlideViewController.swift; sourceTree = "<group>"; };
 		6026EB681DA733F800FEDBAA /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		6032EB0C1DA1642900CE7ACB /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -225,15 +225,15 @@
 		6026EB561DA72E6C00FEDBAA /* MySlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				6026EB571DA72E8300FEDBAA /* MMDrawerBarButtonItem.h */,
-				6026EB581DA72E8300FEDBAA /* MMDrawerBarButtonItem.m */,
-				6026EB591DA72E8300FEDBAA /* MMDrawerController.h */,
-				6026EB5A1DA72E8300FEDBAA /* MMDrawerController.m */,
-				6026EB5B1DA72E8300FEDBAA /* MMDrawerController+Subclass.h */,
-				6026EB5C1DA72E8300FEDBAA /* MMDrawerVisualState.h */,
-				6026EB5D1DA72E8300FEDBAA /* MMDrawerVisualState.m */,
-				6026EB5E1DA72E8300FEDBAA /* UIViewController+MMDrawerController.h */,
-				6026EB5F1DA72E8300FEDBAA /* UIViewController+MMDrawerController.m */,
+				4E5D0DC01DA79FB40059A755 /* MMDrawerBarButtonItem.h */,
+				4E5D0DC11DA79FB40059A755 /* MMDrawerBarButtonItem.m */,
+				4E5D0DC21DA79FB40059A755 /* MMDrawerController.h */,
+				4E5D0DC31DA79FB40059A755 /* MMDrawerController.m */,
+				4E5D0DC41DA79FB40059A755 /* MMDrawerController+Subclass.h */,
+				4E5D0DC51DA79FB40059A755 /* MMDrawerVisualState.h */,
+				4E5D0DC61DA79FB40059A755 /* MMDrawerVisualState.m */,
+				4E5D0DC71DA79FB40059A755 /* UIViewController+MMDrawerController.h */,
+				4E5D0DC81DA79FB40059A755 /* UIViewController+MMDrawerController.m */,
 			);
 			name = MySlideMenu;
 			sourceTree = "<group>";
@@ -454,10 +454,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5D0DCB1DA79FB40059A755 /* MMDrawerVisualState.m in Sources */,
 				6026EB691DA733F800FEDBAA /* HomePageViewController.swift in Sources */,
 				60B8AEC51CE2F53E002690F9 /* Reachability.h in Sources */,
+				4E5D0DCC1DA79FB40059A755 /* UIViewController+MMDrawerController.m in Sources */,
+				4E5D0DCA1DA79FB40059A755 /* MMDrawerController.m in Sources */,
 				6019A7131CDA2B1A00E606C3 /* SignInViewController.swift in Sources */,
 				6019A7191CDA2B1A00E606C3 /* FindWifiNearly.xcdatamodeld in Sources */,
+				4E5D0DC91DA79FB40059A755 /* MMDrawerBarButtonItem.m in Sources */,
 				60B8AEBE1CE2E76D002690F9 /* NSString_HTML.m in Sources */,
 				60B8AEC91CE32A8A002690F9 /* UtilsManager.swift in Sources */,
 				6032EB0D1DA1642900CE7ACB /* WelcomeViewController.swift in Sources */,
@@ -474,14 +478,10 @@
 				60B8AEB91CE2E76D002690F9 /* GTMNSString+HTML.m in Sources */,
 				60B8AEBC1CE2E76D002690F9 /* ASIDownloadCache.m in Sources */,
 				60B8AEC11CE2E76D002690F9 /* Reachability.m in Sources */,
-				6026EB611DA72E8300FEDBAA /* MMDrawerController.m in Sources */,
 				60B8AEBD1CE2E76D002690F9 /* ASINetworkQueue.m in Sources */,
 				60B8AEBB1CE2E76D002690F9 /* ASIHTTPRequest.m in Sources */,
-				6026EB621DA72E8300FEDBAA /* MMDrawerVisualState.m in Sources */,
 				60E8B4F51CE1E3C200FFB946 /* BankendAPIManager.swift in Sources */,
-				6026EB631DA72E8300FEDBAA /* UIViewController+MMDrawerController.m in Sources */,
 				6019A7421CDA391200E606C3 /* MainViewController.swift in Sources */,
-				6026EB601DA72E8300FEDBAA /* MMDrawerBarButtonItem.m in Sources */,
 				60B8AEC21CE2E76D002690F9 /* ASIFormDataRequest.m in Sources */,
 				60B8AEC01CE2E76D002690F9 /* ASIDataDecompressor.m in Sources */,
 			);

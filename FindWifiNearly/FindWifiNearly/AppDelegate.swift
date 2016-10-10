@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         centerNav.isNavigationBarHidden = true;
         centerContainer = MMDrawerController(center: centerNav, leftDrawerViewController: leftSideNav)
 //        centerContainer!.openDrawerGestureModeMask = nil;
+        
         centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.panningCenterView;
         window!.rootViewController = centerContainer
         window!.makeKeyAndVisible()
