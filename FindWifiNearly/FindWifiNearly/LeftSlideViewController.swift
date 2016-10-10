@@ -44,7 +44,15 @@ class LeftSlideViewController: UIViewController {
     }
     
     @IBAction func buttonPROFILEPressed(_ sender: AnyObject) {
+        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "UserDetailViewController") as! UserDetailViewController
         
+        let nextNavController = UINavigationController(rootViewController: nextViewController)
+        
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        nextNavController.isNavigationBarHidden = true;
+        appDelegate.centerContainer!.centerViewController = nextNavController
+        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+
     }
 
     @IBAction func buttonSETTINGPressed(_ sender: AnyObject) {

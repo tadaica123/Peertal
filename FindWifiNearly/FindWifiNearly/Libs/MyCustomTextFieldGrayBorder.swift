@@ -15,9 +15,7 @@ class MyCustomTextFieldGrayBorder: UITextField {
         super.draw(rect)
         
         self.layer.borderWidth = 0.5
-        self.layer.borderColor = UIColor.init(red: 0/255, green: 122/255, blue: 255/255, alpha: 1).cgColor
+        self.layer.borderColor = UIColor.init(red: 85/255, green: 85/255, blue: 85/255, alpha: 1).cgColor
         
-
-
     }
 }
