@@ -1,35 +1,35 @@
 //
-//  ViewController.swift
+//  SearchPageViewController.swift
 //  FindWifiNearly
 //
-//  Created by Leon Trần on 10/7/16.
+//  Created by Leon Trần on 10/8/16.
 //  Copyright © 2016 Appfish. All rights reserved.
 //
 
 import UIKit
 
-class HomePageViewController: UIViewController {
+class SearchPageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var tableView: UITableView!
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        
+      
+        
+        return cell
     }
     
 
-    
     @IBAction func buttonMenuPressed(_ sender: AnyObject) {
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.centerContainer?.toggle(MMDrawerSide.left, animated: true, completion: nil)
     }
-    
-    @IBAction func buttonSearchPressed(_ sender: AnyObject) {
-        self.performSegue(withIdentifier: "segueIdentifier", sender: self)    }
 
 
     /*
