@@ -1443,7 +1443,7 @@
                         <viewControllerLayoutGuide type="bottom" id="bom-NO-N4U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lyR-SZ-iho">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmO-aN-Q4o">
@@ -1673,12 +1673,6 @@
                                                     <constraint firstAttribute="height" constant="1" id="lLR-5I-mQL"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5h-8O-kEw">
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="jak-E3-zgE"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elg-Px-JlC">
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What (IQ)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5r-VP-rdi">
@@ -1778,6 +1772,21 @@
                                                     <outlet property="delegate" destination="0Aa-mn-YfL" id="Cfw-7P-q5q"/>
                                                 </connections>
                                             </tableView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5h-8O-kEw">
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="jak-E3-zgE"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strength &amp; Weaknesses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFD-e8-77v">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="tn7-yn-IFL"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="wuO-SS-bU9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1785,6 +1794,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Y5h-8O-kEw" secondAttribute="trailing" constant="8" id="9ga-zW-txk"/>
                                             <constraint firstItem="hdo-nB-SNr" firstAttribute="top" secondItem="ojy-eW-FYE" secondAttribute="bottom" constant="16" id="CfZ-qC-5b3"/>
                                             <constraint firstItem="Y5h-8O-kEw" firstAttribute="leading" secondItem="bfR-Y1-cVa" secondAttribute="leading" constant="8" id="FNc-Po-CIE"/>
+                                            <constraint firstItem="rFD-e8-77v" firstAttribute="top" secondItem="Y5h-8O-kEw" secondAttribute="bottom" constant="-2" id="Gyq-ak-swB"/>
                                             <constraint firstItem="ZEG-P0-g9d" firstAttribute="leading" secondItem="bfR-Y1-cVa" secondAttribute="leading" constant="8" id="JWi-l2-jsb"/>
                                             <constraint firstItem="ojy-eW-FYE" firstAttribute="leading" secondItem="bfR-Y1-cVa" secondAttribute="leading" id="Mog-Zc-ieG"/>
                                             <constraint firstAttribute="trailing" secondItem="ZEG-P0-g9d" secondAttribute="trailing" constant="8" id="NEL-Qw-D4S"/>
@@ -1795,7 +1805,9 @@
                                             <constraint firstItem="elg-Px-JlC" firstAttribute="leading" secondItem="bfR-Y1-cVa" secondAttribute="leading" id="Wd0-Lh-4Av"/>
                                             <constraint firstItem="hdo-nB-SNr" firstAttribute="leading" secondItem="bfR-Y1-cVa" secondAttribute="leading" id="ggK-0e-buc"/>
                                             <constraint firstAttribute="trailing" secondItem="o6i-3Z-DQW" secondAttribute="trailing" id="hcc-4e-iGe"/>
+                                            <constraint firstAttribute="trailing" secondItem="rFD-e8-77v" secondAttribute="trailing" constant="125" id="iaA-9J-l8C"/>
                                             <constraint firstItem="o6i-3Z-DQW" firstAttribute="leading" secondItem="hdo-nB-SNr" secondAttribute="trailing" constant="8" id="irL-fP-8re"/>
+                                            <constraint firstItem="rFD-e8-77v" firstAttribute="leading" secondItem="bfR-Y1-cVa" secondAttribute="leading" constant="8" id="jQ8-Ki-2aT"/>
                                             <constraint firstItem="ojy-eW-FYE" firstAttribute="top" secondItem="bfR-Y1-cVa" secondAttribute="top" id="kgI-mo-u58"/>
                                             <constraint firstAttribute="trailing" secondItem="elg-Px-JlC" secondAttribute="trailing" id="mlh-zQ-9zn"/>
                                             <constraint firstItem="ZEG-P0-g9d" firstAttribute="top" secondItem="elg-Px-JlC" secondAttribute="bottom" constant="8" id="msa-bG-8HB"/>
@@ -1826,7 +1838,7 @@
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="800"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="tableView" destination="ZEG-P0-g9d" id="JcD-zL-f6K"/>
                         <outlet property="tableViewContraint" destination="BxJ-s0-oac" id="OJq-t2-LY2"/>
