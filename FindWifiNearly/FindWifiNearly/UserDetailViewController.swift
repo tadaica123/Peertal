@@ -8,7 +8,12 @@
 
 import UIKit
 
-class UserDetailViewController: UIViewController {
+class UserDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableViewContraint: NSLayoutConstraint!
+    var menuItems:[String] = [];
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +29,19 @@ class UserDetailViewController: UIViewController {
     @IBAction func buttonMenuPressed(_ sender: AnyObject) {
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.centerContainer?.toggle(MMDrawerSide.left, animated: true, completion: nil)
+    }
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let calculatedTableHeight = CGFloat(self.menuItems.count) * tableView.rowHeight
+        tableViewContraint.constant = calculatedTableHeight
+        return menuItems.count;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let mycell = tableView.dequeueReusableCell(withIdentifier: "WhatIQCell", for: indexPath) as! WhatIQAndHowRatingTableViewCell
+        mycell.lblText.text = menuItems[indexPath.row]
+        return mycell;
     }
 
     /*
