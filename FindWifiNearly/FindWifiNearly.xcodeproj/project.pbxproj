@@ -69,6 +69,7 @@
 		606AD2C61DA8F7BC0084F757 /* MyCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606AD2C51DA8F7BC0084F757 /* MyCustomButton.swift */; };
 		606AD2C81DA904CB0084F757 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606AD2C71DA904CB0084F757 /* SearchPageViewController.swift */; };
 		606AD2CA1DA92CC70084F757 /* MyCustomCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606AD2C91DA92CC70084F757 /* MyCustomCircleImageView.swift */; };
+		607C36161DAD633200D202D7 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607C36151DAD633200D202D7 /* CommentTableViewCell.swift */; };
 		60B8AEB91CE2E76D002690F9 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B8AE9E1CE2E76D002690F9 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		60B8AEBA1CE2E76D002690F9 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B8AEA11CE2E76D002690F9 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		60B8AEBB1CE2E76D002690F9 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B8AEA21CE2E76D002690F9 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -182,6 +183,7 @@
 		606AD2C51DA8F7BC0084F757 /* MyCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomButton.swift; sourceTree = "<group>"; };
 		606AD2C71DA904CB0084F757 /* SearchPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
 		606AD2C91DA92CC70084F757 /* MyCustomCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCircleImageView.swift; sourceTree = "<group>"; };
+		607C36151DAD633200D202D7 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		60B8AE991CE25FE6002690F9 /* FindWifiNearly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FindWifiNearly-Bridging-Header.h"; sourceTree = "<group>"; };
 		60B8AE9D1CE2E76D002690F9 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
 		60B8AE9E1CE2E76D002690F9 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				4E15BA231DACA2A700E842A4 /* WhatIQAndHowRatingTableViewCell.swift */,
+				607C36151DAD633200D202D7 /* CommentTableViewCell.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -550,6 +553,10 @@
 		6019A7051CDA2B1800E606C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Appfish;
@@ -688,6 +695,7 @@
 				6060C5DE1CE695F30017972E /* DialogManager.swift in Sources */,
 				60C6CA9F1CDAE79000A6A5EE /* BLEManager.swift in Sources */,
 				60B8AEB91CE2E76D002690F9 /* GTMNSString+HTML.m in Sources */,
+				607C36161DAD633200D202D7 /* CommentTableViewCell.swift in Sources */,
 				60B8AEBC1CE2E76D002690F9 /* ASIDownloadCache.m in Sources */,
 				60B8AEC11CE2E76D002690F9 /* Reachability.m in Sources */,
 				60B8AEBD1CE2E76D002690F9 /* ASINetworkQueue.m in Sources */,

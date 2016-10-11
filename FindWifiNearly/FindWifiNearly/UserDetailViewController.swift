@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import AVFoundation
 
 class UserDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var tableViewContraint: NSLayoutConstraint!
-    var menuItems:[String] = [];
-
+    @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var tableViewWhatIQ: UITableView!
+    @IBOutlet weak var tableViewComment: UITableView!
+    @IBOutlet weak var mainViewContraintHeight: NSLayoutConstraint!
+    @IBOutlet weak var tableViewWhatIQContraint: NSLayoutConstraint!
+    @IBOutlet weak var tableViewCommentContraint: NSLayoutConstraint!
+    var menuItems:[String] = ["Ta", "Test","Ta", "Test","Ta", "Test","Ta", "Test"];
+    var menuItems2:[String] = ["Ta", "Test","Ta", "Test"];
+    var yOfTableViewComment: CGFloat = 784 + 70 + 10 // + header height + bottom space
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,15 +40,33 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let calculatedTableHeight = CGFloat(self.menuItems.count) * tableView.rowHeight;
-        tableViewContraint.constant = calculatedTableHeight;
-        return menuItems.count;
+        if (tableView.tag == 3){
+            let calculatedTableIQHeight = CGFloat(self.menuItems.count) * tableView.rowHeight;
+            tableViewWhatIQContraint.constant = calculatedTableIQHeight;
+            return menuItems.count;
+        } else {
+            let calculatedTableIQHeight = CGFloat(self.menuItems.count) * tableView.rowHeight;
+            let calculatedTableHeight = CGFloat(self.menuItems2.count) * tableView.rowHeight;
+            tableViewCommentContraint.constant = calculatedTableHeight;
+            let temp = calculatedTableHeight +  calculatedTableIQHeight + yOfTableViewComment;
+            mainViewContraintHeight.constant = temp
+            return menuItems2.count;
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let mycell = tableView.dequeueReusableCell(withIdentifier: "WhatIQCell", for: indexPath) as! WhatIQAndHowRatingTableViewCell;
-        mycell.lblText.text = menuItems[indexPath.row];
-        return mycell;
+        if (tableView.tag == 3){
+            let mycell = tableView.dequeueReusableCell(withIdentifier: "WhatIQCell", for: indexPath) as! WhatIQAndHowRatingTableViewCell;
+            mycell.lblText.text = menuItems[indexPath.row];
+            return mycell;
+        } else {
+            let mycell = tableView.dequeueReusableCell(withIdentifier: "CommentCell", for: indexPath) as! CommentTableViewCell;
+            mycell.lblText.text = menuItems2[indexPath.row];
+            return mycell;
+        }
+      
+        
     }
 
     fileprivate func createRadioButton(_ frame : CGRect, title : String, color : UIColor) -> DLRadioButton {
