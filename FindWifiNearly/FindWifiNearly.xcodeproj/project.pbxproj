@@ -52,7 +52,6 @@
 		6019A7191CDA2B1A00E606C3 /* FindWifiNearly.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7171CDA2B1A00E606C3 /* FindWifiNearly.xcdatamodeld */; };
 		6019A71B1CDA2B1A00E606C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6019A71A1CDA2B1A00E606C3 /* Assets.xcassets */; };
 		6019A71E1CDA2B1A00E606C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6019A71C1CDA2B1A00E606C3 /* LaunchScreen.storyboard */; };
-		6019A7291CDA2B1A00E606C3 /* FindWifiNearlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7281CDA2B1A00E606C3 /* FindWifiNearlyTests.swift */; };
 		6019A7341CDA2B1A00E606C3 /* FindWifiNearlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7331CDA2B1A00E606C3 /* FindWifiNearlyUITests.swift */; };
 		6019A7421CDA391200E606C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7411CDA391200E606C3 /* MainViewController.swift */; };
 		6019A7451CDA543700E606C3 /* WifiObjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6019A7441CDA543700E606C3 /* WifiObjectData.swift */; };
@@ -171,8 +170,6 @@
 		6019A71D1CDA2B1A00E606C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6019A71F1CDA2B1A00E606C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6019A7241CDA2B1A00E606C3 /* FindWifiNearlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindWifiNearlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6019A7281CDA2B1A00E606C3 /* FindWifiNearlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWifiNearlyTests.swift; sourceTree = "<group>"; };
-		6019A72A1CDA2B1A00E606C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6019A72F1CDA2B1A00E606C3 /* FindWifiNearlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindWifiNearlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6019A7331CDA2B1A00E606C3 /* FindWifiNearlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWifiNearlyUITests.swift; sourceTree = "<group>"; };
 		6019A7351CDA2B1A00E606C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -278,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				6019A70F1CDA2B1A00E606C3 /* FindWifiNearly */,
-				6019A7271CDA2B1A00E606C3 /* FindWifiNearlyTests */,
 				6019A7321CDA2B1A00E606C3 /* FindWifiNearlyUITests */,
 				6019A70E1CDA2B1800E606C3 /* Products */,
 			);
@@ -310,15 +306,6 @@
 				60B8AE991CE25FE6002690F9 /* FindWifiNearly-Bridging-Header.h */,
 			);
 			path = FindWifiNearly;
-			sourceTree = "<group>";
-		};
-		6019A7271CDA2B1A00E606C3 /* FindWifiNearlyTests */ = {
-			isa = PBXGroup;
-			children = (
-				6019A7281CDA2B1A00E606C3 /* FindWifiNearlyTests.swift */,
-				6019A72A1CDA2B1A00E606C3 /* Info.plist */,
-			);
-			path = FindWifiNearlyTests;
 			sourceTree = "<group>";
 		};
 		6019A7321CDA2B1A00E606C3 /* FindWifiNearlyUITests */ = {
@@ -765,7 +752,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6019A7291CDA2B1A00E606C3 /* FindWifiNearlyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

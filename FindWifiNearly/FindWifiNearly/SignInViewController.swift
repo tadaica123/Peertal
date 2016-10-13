@@ -50,7 +50,7 @@ class SignInViewController:  UIViewController,  UITextFieldDelegate , BackendAPI
     }
 
     func signIn(){
-        loadingView.isHidden = false
+        loadingView.isHidden = false;
         var email = textFieldUserName.text
         var pw = textFieldPW.text
 

@@ -10,16 +10,30 @@ import Foundation
 
 class DialogManager: NSObject {
     
-    var dialogLoading = UIAlertController(title: nil, message: "Loading", preferredStyle: UIAlertControllerStyle.alert)
+    let alert: UIAlertView = UIAlertView(title: nil, message: "Please wait...", delegate: nil, cancelButtonTitle: "Dismiss");
     
+    func showDialogLoading (){
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x:50, y:10,width: 37, height: 37)) as UIActivityIndicatorView
+        loadingIndicator.center = alert.center;
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.startAnimating();
+        alert.setValue(loadingIndicator, forKey: "accessoryView")
+        loadingIndicator.startAnimating()
+        
+        alert.show();
+    }
     
-    func initDialogLoading () -> UIAlertController{
-        let spinner  = UIActivityIndicatorView(frame: CGRect(x: 0,y: 0, width: 50, height: 50)) as UIActivityIndicatorView
-        spinner.center = dialogLoading.view.center
-        spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        dialogLoading.view.addSubview(spinner)
-        spinner.startAnimating()
-        return dialogLoading
+    func dismissDialogloading(){
+        alert.dismiss(withClickedButtonIndex: 0, animated: true);
+    }
+    
+    func showDialogError(view: UIViewController, error: String){
+        let alertController = UIAlertController(title: "Error", message:
+            error, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Oke", style: UIAlertActionStyle.default,handler: nil))
+        
+        view.present(alertController, animated: true, completion: nil)
     }
 
 }
