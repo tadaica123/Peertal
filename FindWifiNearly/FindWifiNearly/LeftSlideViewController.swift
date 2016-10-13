@@ -9,6 +9,8 @@
 import UIKit
 
 class LeftSlideViewController: UIViewController {
+    
+    let pageManager:PageManager! = PageManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,45 +24,25 @@ class LeftSlideViewController: UIViewController {
     }
     
     @IBAction func buttonHOMEPressed(_ sender: AnyObject) {
-        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomePageViewController") as! HomePageViewController
-        
-        let nextNavController = UINavigationController(rootViewController: nextViewController)
-        
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        nextNavController.isNavigationBarHidden = true;
-        appDelegate.centerContainer!.centerViewController = nextNavController
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+        pageManager.showToViewInSlideMenu(nowView: self, identiferId: "HomePageViewController");
     }
     
     @IBAction func buttonACQUISTIONPressed(_ sender: AnyObject) {
-        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "AcquistionViewController") as! AcquistionViewController
-        
-        let nextNavController = UINavigationController(rootViewController: nextViewController)
-        
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        nextNavController.isNavigationBarHidden = true;
-        appDelegate.centerContainer!.centerViewController = nextNavController
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+        pageManager.showToViewInSlideMenu(nowView: self, identiferId: "AcquistionViewController");
     }
     
     @IBAction func buttonPROFILEPressed(_ sender: AnyObject) {
-        let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "UserDetailViewController") as! UserDetailViewController
-        
-        let nextNavController = UINavigationController(rootViewController: nextViewController)
-        
-        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        nextNavController.isNavigationBarHidden = true;
-        appDelegate.centerContainer!.centerViewController = nextNavController
-        appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+        pageManager.showToViewInSlideMenu(nowView: self, identiferId: "UserDetailViewController");
 
     }
 
     @IBAction func buttonSETTINGPressed(_ sender: AnyObject) {
-        
+        pageManager.showToViewInSlideMenu(nowView: self, identiferId: "SettingViewController");
+
     }
     
     @IBAction func buttonLOGOUTPressed(_ sender: AnyObject) {
-        
+        pageManager.showToViewInSlideMenu(nowView: self, identiferId: "WelcomeViewController");
     }
     /*
     // MARK: - Navigation

@@ -1,14 +1,14 @@
 //
-//  Test ViewController.swift
+//  AllProfileViewController.swift
 //  FindWifiNearly
 //
-//  Created by Leon Trần on 10/11/16.
+//  Created by Leon Trần on 10/13/16.
 //  Copyright © 2016 Appfish. All rights reserved.
 //
 
 import UIKit
 
-class Test_ViewController: UIViewController {
+class AllProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

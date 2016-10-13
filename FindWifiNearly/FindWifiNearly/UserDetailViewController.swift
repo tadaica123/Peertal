@@ -49,7 +49,7 @@ class UserDetailViewController: UIViewController, UITableViewDataSource, UITable
             let calculatedTableHeight = CGFloat(self.menuItems2.count) * tableView.rowHeight;
             tableViewCommentContraint.constant = calculatedTableHeight;
             let temp = calculatedTableHeight +  calculatedTableIQHeight + yOfTableViewComment;
-            mainViewContraintHeight.constant = temp
+            mainViewContraintHeight.constant = temp;
             return menuItems2.count;
         }
         
