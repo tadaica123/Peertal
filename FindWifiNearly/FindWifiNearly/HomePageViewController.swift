@@ -10,6 +10,8 @@ import UIKit
 
 class HomePageViewController: UIViewController {
 
+    @IBOutlet weak var leftTabContraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,14 +34,9 @@ class HomePageViewController: UIViewController {
         self.performSegue(withIdentifier: "segueIdentifier", sender: self)    }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonTabPressed(_ sender: UIButton) {
+//        tabBar.selectedIndex = sender.tag;
+        leftTabContraint.constant = CGFloat(sender.tag) * sender.frame.size.width;
     }
-    */
 
 }

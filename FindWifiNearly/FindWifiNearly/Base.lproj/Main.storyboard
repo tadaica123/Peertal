@@ -791,7 +791,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8BP-rW-Gfv" userLabel="Content View">
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw6-uc-3iD">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw6-uc-3iD">
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="aDQ-zo-Ley"/>
@@ -804,6 +804,7 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonTabPressed:" destination="Jgb-Xf-wka" eventType="touchUpInside" id="s3F-QP-9eo"/>
+                                                            <action selector="buttonTabPressed:" destination="xqh-je-0mJ" eventType="touchUpInside" id="y6Q-xe-CIU"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOa-od-brk">
@@ -820,9 +821,10 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonTabPressed:" destination="Jgb-Xf-wka" eventType="touchUpInside" id="Fa2-Af-Y5u"/>
+                                                            <action selector="buttonTabPressed:" destination="xqh-je-0mJ" eventType="touchUpInside" id="TFq-Xt-jor"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVy-82-SEd">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVy-82-SEd">
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="125" id="15Y-2R-cLc"/>
@@ -836,9 +838,10 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="buttonTabPressed:" destination="Jgb-Xf-wka" eventType="touchUpInside" id="WI5-w1-7Dj"/>
+                                                            <action selector="buttonTabPressed:" destination="xqh-je-0mJ" eventType="touchUpInside" id="gcN-3L-VHF"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp6-1g-D4S">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp6-1g-D4S">
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="1PQ-CH-gLP"/>
@@ -851,10 +854,11 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="buttonTabPressed:" destination="xqh-je-0mJ" eventType="touchUpInside" id="lcR-kp-Dr6"/>
                                                             <action selector="buttonTabPressed:" destination="Jgb-Xf-wka" eventType="touchUpInside" id="lxA-eA-mbI"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxu-8o-Mmg">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxu-8o-Mmg">
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="43" id="0e7-9U-hQx"/>
@@ -867,9 +871,16 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="buttonTabPressed:" destination="xqh-je-0mJ" eventType="touchUpInside" id="ZBC-eO-6pv"/>
                                                             <action selector="buttonTabPressed:" destination="Jgb-Xf-wka" eventType="touchUpInside" id="wmS-nn-isd"/>
                                                         </connections>
                                                     </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zs9-Dx-aF3">
+                                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="125" id="jgW-WN-veT"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -878,13 +889,16 @@
                                                     <constraint firstAttribute="width" constant="600" id="5O6-rd-fpV"/>
                                                     <constraint firstAttribute="bottom" secondItem="lp6-1g-D4S" secondAttribute="bottom" id="Bn1-m1-ady"/>
                                                     <constraint firstItem="vVy-82-SEd" firstAttribute="top" secondItem="8BP-rW-Gfv" secondAttribute="top" id="EBQ-6f-xKv"/>
+                                                    <constraint firstItem="Zs9-Dx-aF3" firstAttribute="top" secondItem="8BP-rW-Gfv" secondAttribute="top" constant="39" id="Fzt-5c-4x4"/>
                                                     <constraint firstItem="dw6-uc-3iD" firstAttribute="top" secondItem="8BP-rW-Gfv" secondAttribute="top" id="G8W-nc-2Fy"/>
+                                                    <constraint firstItem="Zs9-Dx-aF3" firstAttribute="leading" secondItem="8BP-rW-Gfv" secondAttribute="leading" id="Igz-es-PEn"/>
                                                     <constraint firstAttribute="bottom" secondItem="dw6-uc-3iD" secondAttribute="bottom" id="Inz-zl-vsk"/>
                                                     <constraint firstItem="HOa-od-brk" firstAttribute="leading" secondItem="dw6-uc-3iD" secondAttribute="trailing" id="PkO-3v-LVg"/>
                                                     <constraint firstAttribute="bottom" secondItem="vVy-82-SEd" secondAttribute="bottom" id="VDs-3L-eaS"/>
                                                     <constraint firstItem="lp6-1g-D4S" firstAttribute="leading" secondItem="vVy-82-SEd" secondAttribute="trailing" id="XGd-OR-0nA"/>
                                                     <constraint firstItem="Yxu-8o-Mmg" firstAttribute="top" secondItem="8BP-rW-Gfv" secondAttribute="top" id="ZXz-Y7-dmP"/>
                                                     <constraint firstItem="HOa-od-brk" firstAttribute="top" secondItem="8BP-rW-Gfv" secondAttribute="top" id="Zv3-Cx-3km"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Zs9-Dx-aF3" secondAttribute="bottom" id="b7x-7R-wBD"/>
                                                     <constraint firstAttribute="bottom" secondItem="HOa-od-brk" secondAttribute="bottom" id="bgL-WS-nhl"/>
                                                     <constraint firstItem="Yxu-8o-Mmg" firstAttribute="leading" secondItem="lp6-1g-D4S" secondAttribute="trailing" id="dtZ-Xf-zPB"/>
                                                     <constraint firstItem="dw6-uc-3iD" firstAttribute="leading" secondItem="8BP-rW-Gfv" secondAttribute="leading" id="lRl-fy-9bo"/>
@@ -892,6 +906,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="8BP-rW-Gfv" firstAttribute="top" secondItem="DhH-d7-xML" secondAttribute="top" id="9Wp-dZ-uKN"/>
                                             <constraint firstAttribute="bottom" secondItem="8BP-rW-Gfv" secondAttribute="bottom" id="H3A-hd-2gu"/>
@@ -922,6 +937,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="leftTabContraint" destination="Igz-es-PEn" id="rAR-Cl-jus"/>
                         <segue destination="Mrq-qT-SaI" kind="show" identifier="segueIdentifier" id="qJi-Yi-EE9"/>
                     </connections>
                 </viewController>
