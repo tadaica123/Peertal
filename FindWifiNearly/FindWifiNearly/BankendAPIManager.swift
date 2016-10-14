@@ -17,9 +17,9 @@ protocol BackendAPIManagerDelegate: NSObjectProtocol {
 
 class BackendAPIManager: NSObject, ASIHTTPRequestDelegate{
     let reuqestHost:String = "https://www.peertal.com";
-    let reuqestUserType:String = "/app_dev.php/api/mobileß";
+    let reuqestUserType:String = "/api/mobile";
     
-    let PRIVATE_KEY = "b3778f5c414ea8409093e0b9024bca4f";
+    let PRIVATE_KEY = "2ac35339b8ac7d5e7f40f42f7010cdcb";
     
     
     let LOGIN_STRING:String = "login_request";;

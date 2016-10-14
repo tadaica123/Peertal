@@ -13,8 +13,8 @@ class WelcomeViewController:  UIViewController , UITextFieldDelegate, BackendAPI
     @IBOutlet weak var viewTypeName: UIView!
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
-    var user_name : String! = nil
-    var email : String! = nil
+    var user_name : String! = "";
+    var email : String! = "";
     
     let apiObject:BackendAPIManager! = BackendAPIManager()
     let dialogMananger:DialogManager! = DialogManager()
@@ -27,8 +27,15 @@ class WelcomeViewController:  UIViewController , UITextFieldDelegate, BackendAPI
     }
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
-//        self.performSegue(withIdentifier: "segueIdentifier", sender: self)
-      
+        signUp(userName: user_name);
+    }
+    
+    @IBAction func buttonAcceptNamePressed(_ sender: AnyObject) {
+        user_name =  txtName.text;
+        if (user_name == ""){
+            dialogMananger.showDialogError(view: self, error: "Please input your name")
+            return;
+        }
         signUp(userName: user_name);
     }
     
@@ -41,14 +48,10 @@ class WelcomeViewController:  UIViewController , UITextFieldDelegate, BackendAPI
         let dic = try! JSONSerialization.jsonObject(with: dataTemp!, options: [])
         let status = (dic as AnyObject)["status"] as! Int
         let msg = (dic as AnyObject)["message"] as! String
-        let data = (dic as AnyObject)["data"]
-        let userData = (data as AnyObject)["user_data"]
-        let userId = (userData as AnyObject)["user_id"] as! Int
-        let accessToken = (userData as AnyObject)["access_token"] as! String
         if  status == 1 { // Success
             switch apiObject.lastAction {
             case apiObject.REQUEST_ACTION_LOGIN:
-                let dicStorage = ["user_id": userId, "access_token": accessToken] as [String : Any]
+                let dicStorage = ["user_email": email] as [String : Any]
                 utils.cacheUser(dicStorage as NSDictionary)
                 break
             default:
@@ -59,13 +62,11 @@ class WelcomeViewController:  UIViewController , UITextFieldDelegate, BackendAPI
             if !response.isEqual(""){
                 self.performSegue(withIdentifier: "segueIdentifier", sender: self);
             }
+        } else if (status == -1){
+            viewTypeName.isHidden = false;
         } else  { // error
             dialogMananger.dismissDialogloading();
-            let alertController = UIAlertController(title: "Error", message:
-                msg, preferredStyle: UIAlertControllerStyle.alert);
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil));
-            
-            self.present(alertController, animated: true, completion: nil);
+            dialogMananger.showDialogError(view: self, error: msg);
             return
             
         }
@@ -73,7 +74,8 @@ class WelcomeViewController:  UIViewController , UITextFieldDelegate, BackendAPI
     }
     
     func requestFailed(_ response:String){
-       dialogMananger.showDialogError(view: self, error: response)
+        dialogMananger.dismissDialogloading();
+        dialogMananger.showDialogError(view: self, error: response);
     }
     
     func textFieldShouldReturn(_ textField:UITextField) -> Bool {
@@ -89,15 +91,20 @@ class WelcomeViewController:  UIViewController , UITextFieldDelegate, BackendAPI
     }
     
     func signUp(userName: String){
-        dialogMananger.showDialogLoading();
+        
         email = txtEmail.text;
         if (email!.isEqual("")){
-            dialogMananger.showDialogError(view: self, error: "Please input email" );
+            dialogMananger.showDialogError(view: self, error: "Please input email");
             return
         }
         
+        dialogMananger.showDialogLoading();
         apiObject.lastAction = apiObject.REQUEST_ACTION_LOGIN
-        let paramsLevel3:NSMutableDictionary = ["email":email!, "user_name":userName]
+
+        var paramsLevel3:NSMutableDictionary = ["email":email!, "user_name":userName]
+        if (user_name == ""){
+            paramsLevel3 =  ["email":email!]
+        }
         let paramsLevel2:NSMutableDictionary = ["access_token": (apiObject.md5AccessToken(email!)),"action":apiObject.REQUEST_ACTION_LOGIN, "data":paramsLevel3]
         
         let json = try! JSONSerialization.data(withJSONObject: paramsLevel2,  options: JSONSerialization.WritingOptions.init(rawValue: 2))
