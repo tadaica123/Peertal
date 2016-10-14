@@ -19,7 +19,7 @@ class BackendAPIManager: NSObject, ASIHTTPRequestDelegate{
     let reuqestHost:String = "https://www.peertal.com";
     let reuqestUserType:String = "/api/mobile";
     
-    let PRIVATE_KEY = "2ac35339b8ac7d5e7f40f42f7010cdcb";
+    let PRIVATE_KEY = "b3778f5c414ea8409093e0b9024bca4f";
     
     
     let LOGIN_STRING:String = "login_request";;
@@ -66,7 +66,7 @@ class BackendAPIManager: NSObject, ASIHTTPRequestDelegate{
     }
     
     func requestData(_ jsonData:Dictionary<String, String>){
-        asiRequest = ASIFormDataRequest.init(url: URL(string: reuqestHost)!)
+        asiRequest = ASIFormDataRequest.init(url: URL(string: reuqestHost + reuqestUserType)!)
         asiRequest.delegate = self
         asiRequest.useSessionPersistence = true
         asiRequest.responseEncoding = String.Encoding.utf8.rawValue

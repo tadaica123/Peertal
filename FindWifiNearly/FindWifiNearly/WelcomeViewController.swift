@@ -58,18 +58,18 @@ class WelcomeViewController:  UIViewController , UITextFieldDelegate, BackendAPI
                 break
             }
             // Go To Next Page
-            dialogMananger.dismissDialogloading();
             if !response.isEqual(""){
                 self.performSegue(withIdentifier: "segueIdentifier", sender: self);
             }
         } else if (status == -1){
             viewTypeName.isHidden = false;
         } else  { // error
-            dialogMananger.dismissDialogloading();
+            
             dialogMananger.showDialogError(view: self, error: msg);
             return
             
         }
+        dialogMananger.dismissDialogloading();
         
     }
     
